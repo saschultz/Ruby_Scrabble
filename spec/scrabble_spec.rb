@@ -35,4 +35,10 @@ describe('String#scrabble') do
   it('returns a scrabble score for a letter from an array valuing 8') do
     expect('X'.scrabble()).to(eq(8))
   end
+  it('returns a scrabble score for a letter valuing 10') do
+    expect('Q'.scrabble()).to(eq(10))
+  end
+  it('returns a scrabble score for a letter from an array valuing 10') do
+    expect('Z'.scrabble()).to(eq(10))
+  end
 end
