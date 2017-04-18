@@ -10,8 +10,10 @@ class String
     letters_equal_four.push('F', 'H', 'V', 'W', 'Y')
     letters_equal_five = Array.new()
     letters_equal_five.push('K')
+    letters_equal_eight = Array.new()
+    letters_equal_eight.push('J', 'X')
     letter_values = Array.new()
-    letter_values.push(1, 2, 3, 4, 5)
+    letter_values.push(1, 2, 3, 4, 5, 8)
 
     if letters_equal_one.include?(self)
       letter_values.at(0)
@@ -22,7 +24,9 @@ class String
     elsif letters_equal_four.include?(self)
       letter_values.at(3)
     elsif letters_equal_five.include?(self)
-      letter_values.at(4)  
+      letter_values.at(4)
+    elsif letters_equal_eight.include?(self)
+      letter_values.at(5)     
     end
   end
 end
