@@ -41,4 +41,7 @@ describe('String#scrabble') do
   it('returns a scrabble score for a letter from an array valuing 10') do
     expect('Z'.scrabble()).to(eq(10))
   end
+  it('it takes a word and capitalizes all letters, then splits it into the individual characters of the word') do
+    expect('Cat'.scrabble()).to(eq(5))
+  end
 end
